@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body{
+    min-height: 100vh;
+    max-width: 100vw;
+  }
+  
+  @font-face {
+    font-family: 'Inconsolata';
+    src: url(./assets/fonts/inconsolata/Inconsolata-VariableFont_wdth,wght.ttf)format("opentype");
+  }
+  @font-face {
+    font-family: 'Inter';
+    src: url(./assets/fonts/inter/Inter-VariableFont_slnt,wght.ttf)format("opentype");
+  }
+  @font-face {
+    font-family: 'lora';
+    src: url(./assets/fonts/lora/Lora-Italic-VariableFont_wght.ttf)format("opentype");
+  }
+
+
+@layer utilities{
+    .inconsolata{
+        font-family: "Inconsolata";
+    }
+    .inter{
+        font-family: "Inter";
+    }
+    .lora{
+        font-family: "Lora";
+    }
+    .custom-box-shadow {
+      box-shadow: 0px 5px 30px #A445ED;
+    }
+}
+
+
